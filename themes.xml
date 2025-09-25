@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Theme.WomenSafetyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">#e91e63</item>
+        <item name="colorPrimaryVariant">#ad1457</item>
+        <item name="colorOnPrimary">#ffffff</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">#9c27b0</item>
+        <item name="colorSecondaryVariant">#6a1b9a</item>
+        <item name="colorOnSecondary">#ffffff</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor" tools:targetApi="l">#8e24aa</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">#8e24aa</item>
+
+        <!-- Background colors -->
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+        <item name="colorSurface">#f8bbd9</item>
+        <item name="colorOnSurface">#6a1b9a</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">#f8bbd9</item>
+
+        <!-- Button style -->
+        <item name="materialButtonStyle">@style/Widget.WomenSafetyApp.Button</item>
+
+        <!-- Window flags for better appearance -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <!-- Emergency Response Theme for full-screen emergency alerts -->
+    <style name="EmergencyResponseTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/emergency_red</item>
+        <item name="colorPrimaryVariant">@color/emergency_red_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Full screen flags - these work on all API levels -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <!-- Note: windowShowWhenLocked, windowTurnScreenOn, windowKeepScreenOn
+             are handled programmatically in EmergencyResponseActivity for broader compatibility -->
+    </style>
+
+    <!-- Custom Button Styles -->
+    <style name="Widget.WomenSafetyApp.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">20dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <!-- Emergency Button Style -->
+    <style name="Widget.WomenSafetyApp.Button.Emergency" parent="Widget.WomenSafetyApp.Button">
+        <item name="backgroundTint">#ff1744</item>
+        <item name="cornerRadius">25dp</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Voice Button Style -->
+    <style name="Widget.WomenSafetyApp.Button.Voice" parent="Widget.WomenSafetyApp.Button">
+        <item name="backgroundTint">#3f51b5</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Custom Button Style -->
+    <style name="Widget.WomenSafetyApp.Button.Custom" parent="Widget.WomenSafetyApp.Button">
+        <item name="backgroundTint">#e91e63</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Record Button Style -->
+    <style name="Widget.WomenSafetyApp.Button.Record" parent="Widget.WomenSafetyApp.Button">
+        <item name="backgroundTint">#4caf50</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Settings Button Style -->
+    <style name="Widget.WomenSafetyApp.Button.Settings" parent="Widget.WomenSafetyApp.Button">
+        <item name="backgroundTint">#8e24aa</item>
+        <item name="cornerRadius">15dp</item>
+        <item name="android:elevation">2dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="TextAppearance.WomenSafetyApp.Title" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#8e24aa</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+    <style name="TextAppearance.WomenSafetyApp.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">#f8bbd9</item>
+    </style>
+
+    <style name="TextAppearance.WomenSafetyApp.Status" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Emergency Response Text Styles -->
+    <style name="TextAppearance.WomenSafetyApp.Emergency.Title" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">2</item>
+        <item name="android:shadowRadius">4</item>
+    </style>
+
+    <style name="TextAppearance.WomenSafetyApp.Emergency.Timer" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">3</item>
+        <item name="android:shadowDy">3</item>
+        <item name="android:shadowRadius">6</item>
+    </style>
+
+</resources>

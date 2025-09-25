@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <!-- App Title with Sparkle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✨ Women's Safety Guardian ✨"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:shadowColor="#8e24aa"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💜 Your Personal Safety Companion 💜"
+            android:textSize="16sp"
+            android:textColor="#f8bbd9"
+            android:layout_marginBottom="32dp"
+            android:gravity="center" />
+
+        <!-- Status Text -->
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌸 Ready for emergency response 🌸"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:background="@drawable/status_background"
+            android:padding="12dp" />
+
+        <!-- Emergency Alert Button -->
+        <Button
+            android:id="@+id/alertButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="🚨 EMERGENCY ALERT 🚨"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/emergency_button_background"
+            android:layout_marginBottom="16dp"
+            android:elevation="8dp" />
+
+        <!-- Voice Monitor Button -->
+        <Button
+            android:id="@+id/voiceListenButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="🎤 Start Voice Monitor"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/voice_button_background"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp" />
+
+        <!-- Custom Trigger Word Button -->
+        <Button
+            android:id="@+id/customTriggerButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="🎯 Set Custom Trigger Word"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/custom_button_background"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp" />
+
+        <!-- Voice Recording Button -->
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="🎵 Start Evidence Recording"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/record_button_background"
+            android:layout_marginBottom="24dp"
+            android:elevation="4dp" />
+
+        <!-- Settings Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙️ Settings"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:gravity="center" />
+
+        <!-- Emergency Contacts Button -->
+        <Button
+            android:id="@+id/contactsButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="📱 Manage Emergency Contacts"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/settings_button_background"
+            android:layout_marginBottom="12dp"
+            android:elevation="2dp" />
+
+        <!-- Cloud Storage Button -->
+        <Button
+            android:id="@+id/cloudStorageButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="☁️ Cloud Storage Settings"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/settings_button_background"
+            android:layout_marginBottom="24dp"
+            android:elevation="2dp" />
+
+        <Button
+            android:id="@+id/modeToggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🛡️ Switch to Guardian Mode"
+            android:background="#8E24AA"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/modeStatusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤 PERSONAL MODE: Ready to send emergency alerts"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:background="#FFF0F5"
+            android:padding="10dp"
+            android:layout_margin="5dp" />
+
+        <!-- Instructions Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/instructions_background"
+            android:padding="20dp"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💡 How to Use"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#8e24aa"
+                android:layout_marginBottom="12dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚨 Emergency Alert: Sends SMS + WhatsApp with location every 2 minutes\n\n🎤 Voice Monitor: Detects 'help me', 'emergency', 'I'm in danger'\n\n📱 WhatsApp Integration: Opens WhatsApp automatically with location - press SEND\n\n🎯 Custom Triggers: Add your own emergency activation phrases\n\n🎵 Evidence Recording: Auto-records audio + uploads to cloud\n\n📍 Location Tracking: Real-time GPS sharing with emergency contacts\n\n📵 Offline Mode: Works without internet, syncs when connected\n\n🛡️ Dual SIM: Choose which SIM for emergency SMS"
+                android:textSize="14sp"
+                android:textColor="#6a1b9a"
+                android:lineSpacingExtra="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

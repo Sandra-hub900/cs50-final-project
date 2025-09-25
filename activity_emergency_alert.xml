@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flashingView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FF0000"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/alertText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚨 EMERGENCY ALERT 🚨"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:layout_marginBottom="30dp" />
+
+    <TextView
+        android:id="@+id/senderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="From: +1234567890"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/messageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency message content"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:textAlignment="center"
+            android:padding="20dp"
+            android:background="#80000000" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/callButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="📞 CALL"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="#4CAF50"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/textButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="📱 TEXT"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="#2196F3"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="🛑 STOP"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="#F44336"
+            android:textColor="@android:color/white"
+            android:layout_margin="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

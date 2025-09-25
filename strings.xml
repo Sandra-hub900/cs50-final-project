@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Women\'s Safety Guardian</string>
+
+    <!-- Main Activity Strings -->
+    <string name="emergency_alert">🚨 EMERGENCY ALERT 🚨</string>
+    <string name="voice_monitor_start">🎤 Start Voice Monitor</string>
+    <string name="voice_monitor_stop">🔇 Stop Voice Monitor</string>
+    <string name="custom_trigger">🎯 Set Custom Trigger Word</string>
+    <string name="evidence_recording_start">🎵 Start Evidence Recording</string>
+    <string name="evidence_recording_stop">🛑 Stop Evidence Recording</string>
+    <string name="emergency_contacts">📱 Manage Emergency Contacts</string>
+    <string name="cloud_storage">☁️ Cloud Storage Settings</string>
+
+    <!-- Status Messages -->
+    <string name="ready_status">🌸 Ready for emergency response 🌸</string>
+    <string name="listening_status">🌸 Listening for emergency words... 🌸</string>
+    <string name="voice_monitoring_active">🌸 Voice monitoring active... 🌸</string>
+    <string name="voice_monitoring_stopped">🌸 Voice monitoring stopped 🌸</string>
+    <string name="recording_evidence">🎵 Recording evidence... 🎵</string>
+    <string name="evidence_saved">🌸 Evidence saved! Uploading to cloud... 🌸</string>
+    <string name="custom_trigger_added">🌸 Custom trigger word added! 🌸</string>
+    <string name="welcome_back">🌸 Welcome back! Ready for emergency response 🌸</string>
+
+    <!-- Emergency Response -->
+    <string name="emergency_response_active">EMERGENCY RESPONSE ACTIVATED!</string>
+    <string name="emergency_response_stopped">EMERGENCY RESPONSE STOPPED</string>
+    <string name="response_deactivated">Response Deactivated</string>
+    <string name="stop_emergency">STOP EMERGENCY</string>
+    <string name="close">Close</string>
+
+    <!-- Toast Messages -->
+    <string name="emergency_sms_sent">✨ Emergency SMS sent! ✨</string>
+    <string name="sms_send_failed">❌ Failed to send SMS: %s</string>
+    <string name="recording_started">✨ Evidence recording started ✨</string>
+    <string name="recording_failed">❌ Recording failed: %s</string>
+    <string name="recording_saved">✨ Evidence recording saved: %s ✨</string>
+    <string name="recording_stop_failed">❌ Failed to stop recording: %s</string>
+    <string name="cloud_upload_success">✨ Evidence uploaded to cloud successfully! ✨</string>
+    <string name="cloud_upload_failed">❌ Cloud upload failed. Evidence saved locally.</string>
+    <string name="custom_trigger_saved">✨ Custom trigger saved: \"%s\" ✨</string>
+    <string name="no_trigger_detected">❌ No trigger word detected. Try again.</string>
+    <string name="custom_triggers_cleared">Custom triggers cleared</string>
+    <string name="microphone_permission_required">Microphone permission required</string>
+    <string name="permissions_denied">⚠️ Some permissions were denied. App may not work properly.</string>
+    <string name="permissions_granted">✨ All permissions granted! App ready to protect you! ✨</string>
+    <string name="emergency_contacts_coming_soon">💜 Emergency Contacts feature coming soon! 💜</string>
+    <string name="use_stop_button">Use STOP EMERGENCY button to deactivate</string>
+    <string name="say_trigger_clearly">Say your custom trigger word clearly</string>
+    <string name="emergency_started_5min">Emergency Response Started - Will run for 5 minutes</string>
+    <!-- Missing strings for activity_flash.xml -->
+    <string name="victim_s_location_unknown">Victim\'s location unknown</string>
+    <string name="stop_alert">STOP ALERT</string>
+    <string name="emergency_completed">Emergency Response Completed</string>
+    <string name="emergency_stopped">Emergency Response Stopped</string>
+    <string name="siren_not_found">Siren file not found - using system alert</string>
+
+    <!-- Dialog Messages -->
+    <string name="custom_trigger_title">💜 Custom Trigger Word</string>
+    <string name="custom_trigger_message">Choose an option for your custom emergency trigger:</string>
+    <string name="record_new_trigger">🎤 Record New Trigger</string>
+    <string name="view_current_triggers">📝 View Current Triggers</string>
+    <string name="cancel">❌ Cancel</string>
+    <string name="ok">OK</string>
+    <string name="clear_custom">Clear Custom</string>
+    <string name="your_trigger_words">💜 Your Trigger Words</string>
+    <string name="cloud_storage_title">☁️ Cloud Storage Settings</string>
+    <string name="cloud_storage_message">Your evidence recordings are automatically uploaded to Firebase Cloud Storage for safety.\n\nFeatures:\n• Automatic backup\n• Secure encryption\n• Access from anywhere\n• Evidence preservation</string>
+
+    <!-- SMS Messages -->
+    <string name="emergency_sms_text">🚨 EMERGENCY ALERT: I\'m in danger. Please help me immediately! This is an automated message from Women\'s Safety Guardian app.</string>
+    <string name="emergency_location_text">🚨 EMERGENCY LOCATION: https://maps.google.com/?q=%1$s,%2$s - Sent from Women\'s Safety Guardian</string>
+
+    <!-- Instructions -->
+    <string name="how_to_use">💡 How to Use</string>
+    <string name="instructions_text">🚨 Emergency Alert: Sends SMS and triggers 5-minute response\n\n🎤 Voice Monitor: Listens for trigger words like \'help me\', \'danger\'\n\n🎯 Custom Trigger: Record your own emergency phrase\n\n🎵 Evidence Recording: Saves audio to cloud for safety\n\n📱 SMS Trigger: Send emergency keywords to activate response\n\n⏰ Response Duration: 5 minutes unless manually stopped</string>
+
+    <!-- App Title and Subtitle -->
+    <string name="app_title">✨ Women\'s Safety Guardian ✨</string>
+    <string name="app_subtitle">💜 Your Personal Safety Companion 💜</string>
+
+    <!-- Settings -->
+    <string name="settings_title">⚙️ Settings</string>
+
+    <!-- Emergency Response Activity -->
+    <string name="emergency_services_notified">Emergency services have been notified\nPress STOP to deactivate</string>
+    <string name="recording_trigger_button">🎯 Recording Trigger...</string>
+
+    <!-- Google Sign-In -->
+    <string name="default_web_client_id">715183957005-irta11e8nd81r7q3r8t7lpkgrfj0uf47.apps.googleusercontent.com</string>
+
+</resources>
