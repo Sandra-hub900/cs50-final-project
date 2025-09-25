@@ -1,16 +1,139 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+@file:Suppress("DEPRECATION", "UNUSED_EXPRESSION")
+
+import com.android.build.api.dsl.Packaging
+
+
+
+
 plugins {
-    alias(libs.plugins.android.application) apply false
-    alias(libs.plugins.kotlin.android) apply false
-    alias(libs.plugins.jetbrains.kotlin.compose) apply false
-    alias(libs.plugins.google.gms.services) apply false
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.jetbrains.kotlin.compose)
+    alias(libs.plugins.google.gms.services)
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
+android {
+    namespace = "com.example.womensafetyapp2"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId = "com.example.womensafetyapp2"
+        minSdk = 23
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+
+    buildFeatures {
+        compose = true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.11"
+    }
+
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+            excludes += "META-INF/DEPENDENCIES"
+            excludes += "META-INF/LICENSE"
+            excludes += "META-INF/LICENSE.txt"
+            excludes += "META-INF/NOTICE"
+            excludes += "META-INF/NOTICE.txt"
+        }
     }
 }
 
+dependencies {
+    // Apply Compose BOM first
+    implementation(platform(libs.androidx.compose.bom))
+
+    // AndroidX Core
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.activity.compose)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    // Compose
+    implementation(libs.androidx.compose.ui)
+    implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.compose.foundation)
+    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.constraintlayout.compose)
+    implementation(libs.androidx.work.runtime.ktx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.constraintlayout)
+    debugImplementation(libs.androidx.compose.ui.tooling)
+
+    // Material Components (needed for themes.xml)
+    implementation("com.google.android.material:material:1.10.0")
+
+
+    // Google Play Services - Location and Auth
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+
+    // OkHttp and Retrofit
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // Google Drive API for evidence storage
+    implementation("com.google.apis:google-api-services-drive:v3-rev20220815-2.0.0")
+    implementation("com.google.api-client:google-api-client-android:2.0.0")
+    implementation("com.google.http-client:google-http-client-gson:1.42.3")
+    implementation("com.google.http-client:google-http-client-android:1.42.3")
+        // Google Drive API - Exact working versions
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation("com.google.apis:google-api-services-drive:v3-rev20220815-2.0.0")
+    implementation("com.google.api-client:google-api-client-android:1.32.1") {
+        exclude(group = "org.apache.httpcomponents")
+        exclude(group = "org.apache.httpcomponents", module = "httpclient")
+        }
+    implementation("com.google.http-client:google-http-client-gson:1.42.3")
+    implementation("com.google.http-client:google-http-client-android:1.42.3")
+    implementation("com.google.guava:guava:31.1-android")
+
+        // Google Drive - WORKING combination
+
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation("com.google.api-client:google-api-client-android:1.32.1") {
+        exclude(group = "org.apache.httpcomponents")
+        }
+    implementation("com.google.http-client:google-http-client-gson:1.42.3")
+
+    // Add these EXACT versions to avoid conflicts
+    implementation("com.google.guava:guava:31.1-android")
+    implementation("com.google.http-client:google-http-client-android:1.42.3")
+
+
+    // Testing dependencies (optional)
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    androidTestImplementation(platform("androidx.compose:compose-bom:2024.05.00"))
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+}
