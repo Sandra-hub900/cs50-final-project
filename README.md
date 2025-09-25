@@ -1,5 +1,5 @@
-# Women Safety App - Emergency Response System
-#### Video Demo: <https://www.youtube.com/watch?v=dQw4w9WgXcQ>
+# Women Safety/Guardian App - Emergency Response System
+#### Video Demo: 
 #### Description:
 
 The Women Safety App is a comprehensive Android emergency response application designed to provide immediate assistance during dangerous situations. Built using Java and Android Studio, this app combines multiple safety features into a single, reliable platform that works even in offline conditions. The app focuses on three core functionalities: emergency alerts, evidence recording, and real-time location sharing.
@@ -98,3 +98,4 @@ While the current version provides comprehensive emergency functionality, potent
 The Women Safety App represents a complete emergency response solution that prioritizes reliability and ease of use. By combining multiple communication channels, evidence recording, and cloud backup into a single application, it provides users with a comprehensive safety tool. The app demonstrates practical application of Android development concepts including services, permissions, API integration, and user interface design.
 
 The project showcases not only technical programming skills but also thoughtful consideration of real-world user needs and emergency scenarios. Every feature was implemented with the understanding that in a genuine emergency, the app must work flawlessly when it matters most.
+
