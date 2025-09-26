@@ -1,5 +1,5 @@
 # Women Safety/Guardian App - Emergency Response System
-#### Video Demo: 
+#### Video Demo: https://www.youtube.com/watch?v=eloJAnjdIYA
 #### Description:
 
 The Women Safety App is a comprehensive Android emergency response application designed to provide immediate assistance during dangerous situations. Built using Java and Android Studio, this app combines multiple safety features into a single, reliable platform that works even in offline conditions. The app focuses on three core functionalities: emergency alerts, evidence recording, and real-time location sharing.
@@ -12,7 +12,7 @@ The Women Safety App is a single-activity application with a clean, intuitive in
 
 ### Emergency Alert System
 
-The centerpiece of the application is its sophisticated emergency alert system. When activated, the app simultaneously sends SMS messages and WhatsApp alerts to pre-configured emergency contacts every 2 minutes. This dual-channel approach ensures message delivery even if one communication method fails. The SMS system includes intelligent SIM card detection for dual-SIM devices, allowing users to select which SIM card to use for emergency communications.
+The centerpiece of the application is its sophisticated emergency alert system. When activated, the app simultaneously sends SMS messages and WhatsApp alerts to pre-configured emergency contacts every 2 minutes. This dual-channel approach ensures message delivery even if one communication method fails. 
 
 The emergency alerts include comprehensive information: the user's exact GPS coordinates with Google Maps links, timestamp, location accuracy, and detailed instructions for accessing recorded evidence. The app automatically generates messages that provide emergency contacts with everything they need to respond effectively.
 
@@ -28,7 +28,7 @@ The Google Drive integration uses OAuth2 authentication and the Drive API to sec
 
 ### Location Tracking and Sharing
 
-Real-time GPS tracking begins immediately when emergency mode is activated. The app uses Google's Fused Location Provider for accurate positioning and shares coordinates through multiple channels. Location information is embedded in both SMS and WhatsApp messages, providing emergency contacts with precise geographic data and direct links to Google Maps.
+Real-time GPS tracking begins immediately when emergency mode is activated. The app uses Google's Fused Location Provider for accurate positioning and shares coordinates through multiple channels. Location information is embedded in WhatsApp messages, providing emergency contacts with precise geographic data and direct links to Google Maps.
 
 ## Technical Implementation
 
@@ -53,7 +53,6 @@ The cloud storage functionality uses Google's Drive API v3 with proper credentia
 ### SMS and Communication Systems
 
 The SMS system was designed to handle various edge cases:
-- Dual SIM support with automatic detection and user selection
 - Message splitting for long SMS content
 - Retry mechanisms for failed deliveries
 - Integration with Android's SmsManager for reliable message sending
@@ -80,7 +79,7 @@ Android's runtime permission system required careful implementation to ensure th
 
 The app has been extensively tested across different scenarios:
 - Various Android versions and device types
-- Network connectivity issues and offline operation
+- Network connectivity issues 
 - Different SIM card configurations
 - Google account authentication edge cases
 - Audio recording in different environments
@@ -98,4 +97,5 @@ While the current version provides comprehensive emergency functionality, potent
 The Women Safety App represents a complete emergency response solution that prioritizes reliability and ease of use. By combining multiple communication channels, evidence recording, and cloud backup into a single application, it provides users with a comprehensive safety tool. The app demonstrates practical application of Android development concepts including services, permissions, API integration, and user interface design.
 
 The project showcases not only technical programming skills but also thoughtful consideration of real-world user needs and emergency scenarios. Every feature was implemented with the understanding that in a genuine emergency, the app must work flawlessly when it matters most.
+
 
